@@ -1,0 +1,87 @@
+@use "variables" as *;
+
+// Extra Stripping Styles:
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+// Base Styles:
+body {
+    overflow-x: hidden;
+    background-color: $primaryColour;
+    .greenBack {
+        background-color: $secondaryColour;
+    }
+}
+
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flexGrid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexGridSpaceBw {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+// Styles for Text:
+p {
+    padding: 30px 0 35px;
+}
+
+// Styles for Buttons:
+a {
+    &.buttonFind {
+        display: inline-block;
+        width: 220px;
+        color: $primaryColour;
+        background-color: $tertiaryColour;
+        padding: 8px 30px;
+        cursor: pointer;
+        transition: 0.25s;
+        &:hover {
+            transform: scale(1.15);
+        }
+        &:focus {
+            transform: scale(1.15);
+        }
+    }
+    &.buttonRead {
+        display: inline-block;
+        color: $fontColour;
+        background-color: $primaryColour;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: 0.25s;
+        &:hover {
+            transform: scale(1.15);
+        }
+        &:focus {
+            transform: scale(1.15);
+        }
+    }
+}
+

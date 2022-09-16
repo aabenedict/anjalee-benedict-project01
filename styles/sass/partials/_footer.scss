@@ -1,0 +1,11 @@
+@use "variables" as *;
+
+footer {
+    background-color: $tertiaryColour;
+    color: $primaryColour;
+    p {
+        padding: 2.5px 0;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}

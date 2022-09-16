@@ -1,0 +1,88 @@
+@use "partials/setup";
+@use "partials/variables" as *;
+@use "partials/mixins" as *;
+@use "partials/typography";
+@use "partials/baseStyles";
+@use "partials/header";
+@use "partials/footer";
+
+
+main {
+    .sectionOne {
+        padding: 15% 10%;
+    }
+    .sectionTwo {
+        .imgContainerLeft {
+            width: 50%;
+            transform: translate(-20%, -11%);
+            box-shadow: 35px 43px 0px $tertiaryColour;
+        }
+        .textContainerLeft {
+            margin-top: 2%;
+            width: 40%;
+            text-align: left;
+        }
+        .textContainerRight {
+            width: 40%;
+            text-align: right;
+        }
+        .imgContainerRight {
+            width: 50%;            
+            transform: translate(20%, 11%);
+            box-shadow: -35px 35px 0px $tertiaryColour;
+        }
+    }
+    .sectionThree {
+        padding: 10% 0% 6%;
+        li {
+            width: 50%;
+            .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background-color: $tertiaryColour;
+                color: $primaryColour;
+                font-size: 30px;
+                padding: 0 1%;
+                margin: 0 3%;
+                transition: 0.25s;
+                &:hover {
+                    transform: scale(1.25);
+                }
+                &:focus {
+                    transform: scale(1.25);
+                }
+            }
+            .textContainer {
+                margin-top: 2%;
+                width: calc(92% - 45px)
+            }
+        }
+    }
+    .sectionFive {
+        padding: 8% 0;
+        .imgContainer {
+            width: 23%;
+            margin-right: 10%;
+            img {
+                box-shadow: 35px 35px 0px $tertiaryColour;
+            }
+        }
+        .textContainer {
+            width: 67%;
+            h3 {
+                text-align: left;
+            }   
+        }
+    }
+    .sectionSix {
+        padding: 8% 0;
+        li {
+            width: 31%;
+        }
+    }   
+}
+

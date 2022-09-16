@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+// Styles for top nav
+@mixin nav() {
+    nav {
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 35px;
+        }
+        a {
+            color: $fontColour;
+            cursor: pointer;
+            padding-left: 40px;
+            padding-right: 20px;
+            &:hover {
+                color: $tertiaryColour;
+            }
+            &:focus {
+                color: $tertiaryColour;
+            }
+        }
+    } 
+}

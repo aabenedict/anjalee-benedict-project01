@@ -1,0 +1,11 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+header {
+    height: 80vh;
+    @include header("../assets/blog-header.jpg", 80vh);
+
+    h1 {
+        width: 40%;  
+    }
+}
