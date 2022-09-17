@@ -1,0 +1,13 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+header {
+    @include headerImage("../assets/contact-header.jpg");
+
+    @include nav();
+
+    h2 {
+        text-align: center;
+        padding: 11% 8% 20% 0;
+    }
+}

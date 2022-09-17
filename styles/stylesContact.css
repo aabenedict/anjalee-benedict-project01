@@ -432,7 +432,7 @@ button {
 header .headerImage {
   width: 100%;
   height: 100%;
-  background-image: url("../assets/blog-header.jpg");
+  background-image: url("../assets/contact-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -472,90 +472,37 @@ footer p {
   text-align: center;
 }
 
-.blogContent {
+aside {
+  width: 30%;
+  margin-top: -8%;
+  margin-right: 6%;
+}
+aside .contactList {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
-
-.columnLeft {
-  width: 30%;
-  margin-top: 8%;
-  margin-right: 6%;
+aside .iconSocial {
+  margin-right: 25px;
+  font-size: 1.2rem;
+  color: #FFFFFF;
 }
-.columnLeft .imgContainer {
-  width: 126%;
-  -webkit-transform: translate(-26%, 0%);
-          transform: translate(-26%, 0%);
-  -webkit-box-shadow: 37px 13px 0px -12px #0F614E;
-          box-shadow: 37px 13px 0px -12px #0F614E;
+aside h5 {
+  padding: 25px 0;
 }
-.columnLeft .textContainer {
-  padding: 0 25px 30px;
-}
-.columnLeft .textContainer h5 {
-  padding: 20px 0 25px;
-}
-.columnLeft .textContainer p {
-  padding: 0 0 50px;
-}
-.columnLeft .textContainer li {
-  list-style: inside;
-  font-family: "Lato";
-  font-size: 1rem;
-  line-height: 1.6rem;
+aside p {
+  padding: 0 0 2px;
 }
 
-.columnRight {
+form {
   width: 64%;
-}
-.columnRight .imgContainerOne {
-  width: 113%;
   -webkit-transform: translate(4.1%, -37%);
           transform: translate(4.1%, -37%);
   -webkit-box-shadow: -50px 50px 0px -12px #86E0F9;
           box-shadow: -50px 50px 0px -12px #86E0F9;
-}
-.columnRight .textContainerOne {
-  margin-top: -24%;
-  padding: 5% 0 2% 5%;
-  border: 6px solid #86E0F9;
-  border-top: none;
-  border-right: none;
-}
-.columnRight .textContainerOne h3 {
-  text-align: left;
-}
-.columnRight .textContainerOne .subHeading {
-  padding: 0 0 40px;
-}
-.columnRight .textContainerOne p {
-  padding: 0;
-}
-
-.commentsBox {
-  padding: 5% 0 0 5%;
-}
-.commentsBox h4 {
-  padding-bottom: 6%;
-}
-.commentsBox li {
-  margin-bottom: 10%;
-}
-.commentsBox .imgContainer {
-  width: 12%;
-  margin: 8px 30px 0 0;
-}
-.commentsBox .textContainer {
-  width: calc(88% - 30px);
-}
-.commentsBox .textContainer .commentTitle {
-  padding: 0 0 10px 0;
-}
-.commentsBox .textContainer p {
-  padding: 0;
-}
-
-button {
   background-color: #0F614E;
+  padding: 30px 30px 0;
+}
+form button {
+  background-color: #0C1423;
 }
