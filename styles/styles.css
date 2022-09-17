@@ -261,6 +261,10 @@ body h4 {
   font-size: 1.6rem;
   line-height: 0.9rem;
 }
+body h5 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
 body p {
   font-family: "Lato";
   font-size: 1rem;
@@ -275,6 +279,16 @@ body .buttonFind, body .buttonRead {
   font-size: 1rem;
   text-align: center;
   line-height: 1.6rem;
+}
+body input, body textarea {
+  font-family: "Lato";
+  font-size: 0.9rem;
+  color: #FFFFFF;
+}
+body button {
+  font-family: "Barlow";
+  font-size: 1.1rem;
+  color: #FFFFFF;
 }
 
 * {
@@ -377,6 +391,42 @@ a.buttonRead:hover {
 a.buttonRead:focus {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
+}
+
+input, textarea {
+  width: calc(49.5% - 30px);
+  padding: 15px;
+  margin: 15px;
+  border: none;
+  border-bottom: solid 2px #86E0F9;
+  background-color: transparent;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+input::placeholder, textarea::placeholder {
+  opacity: 1;
+}
+
+textarea {
+  border: solid 2px #86E0F9;
+  width: calc(100% - 30px);
+}
+
+button {
+  width: calc(100% - 30px);
+  padding: 12px 0;
+  margin: 25px 15px 10%;
+  border: none;
 }
 
 header {

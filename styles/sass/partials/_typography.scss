@@ -36,6 +36,10 @@ body {
         font-size: 1.6rem;
         line-height: 0.9rem;
     }
+    h5 {
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+    }
     p {
         font-family: $bodyFont;
         font-size: 1rem;
@@ -50,6 +54,16 @@ body {
         font-size: 1rem;
         text-align: center;
         line-height: 1.6rem;
+    }
+    input, textarea {
+        font-family: $bodyFont;
+        font-size: 0.9rem;
+        color: $fontColour;
+    }
+    button {
+        font-family: $headingFont;
+        font-size: 1.1rem;
+        color: $fontColour;
     }
 }
 

@@ -85,3 +85,26 @@ a {
     }
 }
 
+// Styles for Form:
+
+input, textarea {
+    width: calc(49.5% - 30px);
+    padding: 15px;
+    margin: 15px;
+    border: none;
+    border-bottom: solid 2px $tertiaryColour;
+    background-color: transparent;
+    &::placeholder {
+        opacity: 1;
+    }
+}
+textarea {
+    border: solid 2px $tertiaryColour;
+    width: calc(100% - 30px);
+}
+button {
+    width: calc(100% - 30px);
+    padding: 12px 0;
+    margin: 25px 15px 10%;
+    border: none;
+}

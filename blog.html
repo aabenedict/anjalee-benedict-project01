@@ -9,18 +9,89 @@
 </head>
 <body>
     <header>
-        <div class="hero"></div>
-        <div class="wrapper">
-            <nav>
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#blog">BLOG</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
-            <h1>BLOG</h1>
-        </div>
+        <div class="headerImage">
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <h2>BLOG</h2>
+            </div>
+        </div> 
     </header>
+    <main class="wrapper flexGridSpaceBw blogContent">
+        <aside class="columnLeft">
+            <div class="imgContainer">
+                <img src="assets/side-blog-image.jpg" alt="large fish swimming in tank with people watching">
+            </div>
+            <div class="textContainer greenBack">
+                <h5>ABOUT UNDER THE SEA</h5>
+                <p>Lorem ipsum dolor sit amet as consectetur, adipisicing elit. Sed, earum! Find our more.</p>
+                <h5>RECENT POSTS</h5>
+                <ul>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Delectus itaque off cupid.</li>
+                    <li>Ipsa omnis mollitia illum et.</li>
+                    <li>Laudantium possimus atque!</li>
+                </ul>
+            </div>
+        </aside>
+        <section class="columnRight">
+            <div class="imgContainerOne">
+                <img src="assets/blog-post-image.jpg" alt="group of orange fish swimming at the bottom of an aquarium tank near sea anemone">
+            </div>
+            <section class="textContainerOne">
+                <h3>DISCOVERING NEW SPECIES</h3>
+                <p class="subHeading">Monday May 4th, 2019 by Dieula</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque nostrum, dolores obcaecati ut esse quasi, nulla libero, in reprehenderit nisi dignissimos aut cumque fugiat qui consequatur asperiores inventore amet impedit?</p>
+                <p>Eos impedit itaque deleniti hic, nihil ratione, officiis beatae at sunt numquam iusto veritatis esse perspiciatis consequuntur. Voluptatem necessitatibus eos, esse quas ipsam velit aliquam magnam molestias exercitationem pariatur dolor illo est excepturi, similique illum sapiente magni totam beatae delectus?</p>
+                <p>Eos impedit itaque deleniti hic, nihil ratione, officiis beatae at sunt numquam iusto veritatis esse perspiciatis consequuntur. Voluptatem necessitatibus eos, esse quas ipsam velit aliquam magnam molestias exercitationem pariatur dolor illo est excepturi, similique illum sapiente magni totam beatae delectus? Facere eligendi exercitationem eius. Eos impedit itaque deleniti hic, nihil ratione, officiis beatae at sunt numquam iusto veritatis esse perspiciatis consequuntur. Voluptatem necessitatibus eos, esse quas ipsam velit aliquam magnam molestias exercitationem pariatur dolor illo est excepturi, similique illum sapiente magni totam beatae delectus? Facere eligendi exercitationem eius. Ratione maxime reprehenderit deleniti cumque. Reiciendis ipsum alias itaque. Aliquid in facere fuga voluptas aliquam! Beatae, et? Totam doloribus, quos dolore sapiente sit dolorem.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque nostrum, dolores obcaecati ut esse quasi, nulla libero, in reprehenderit nisi dignissimos aut cumque fugiat qui consequatur asperiores inventore amet impedit?</p>
+                <p>Doloremque nostrum, dolores obcaecati ut esse quasi, nulla libero, in reprehenderit nisi dignissimos aut cumque fugiat qui consequatur asperiores inventore amet impedit?</p>
+            </section>
+            <section class="commentsBox">
+                <h4>COMMENTS:</h4>
+                <ul>
+                    <li class="flexGrid">
+                        <div class="imgContainer">
+                            <img src="assets/comment-1.jpg" alt="face of comment one against a pink background">
+                        </div>
+                        <div class="textContainer">
+                            <p class="commentTitle">Tuesday October 9th, 2018 by Jeremy</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci ullam labore, soluta eligendi nam quaerat maxime nemo porro ratione voluptates tenetur iste nihil? Quisquam ad consectetur soluta mollitia adipisci consequatur.</p>
+                        </div>
+                    </li>
+                    <li class="flexGrid">
+                        <div class="imgContainer">
+                            <img src="assets/comment-2.jpg" alt="person who made comment two leaning against a brick wall">
+                        </div>
+                        <div class="textContainer">
+                            <p class="commentTitle">Wednesday October 10th, 2018 by Julia</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, placeat sapiente iste maiores sint distinctio debitis dolorum quasi ipsam temporibus vero commodi sunt natus!</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <form action="#" method="#" name="commentForm">
+                <label for="name" class="sr-only">Enter name</label>
+                <input type="text" name="userComments" id="name" placeholder="Name" required>
+            
+                <label for="email" class="sr-only">Enter email address</label>
+                <input type="email" name="userComments" id="email" placeholder="Email address" required>
+            
+                <label for="comments" class="sr-only">Enter comment</label>
+                <textarea name="userComments" id="comments" cols="30" rows="10" minlength="5" maxlength="200" required>Comment</textarea>
+            
+                <button>POST COMMENT</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2018 HackerYou</p>
+    </footer>
 </body>
 </html>

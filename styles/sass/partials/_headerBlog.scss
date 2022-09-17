@@ -2,10 +2,22 @@
 @use "mixins" as *;
 
 header {
-    height: 80vh;
-    @include header("../assets/blog-header.jpg", 80vh);
+    .headerImage {
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/blog-header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    // height: 74.5vh;
+    // background-image: url(../assets/blog-header.jpg);
+    // background-size: contain;
+    // background-repeat: no-repeat;
 
-    h1 {
-        width: 40%;  
+    @include nav();
+
+    h2 {
+        text-align: center;
+        padding: 11% 8% 20% 0;
     }
 }

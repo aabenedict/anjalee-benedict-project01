@@ -261,6 +261,10 @@ body h4 {
   font-size: 1.6rem;
   line-height: 0.9rem;
 }
+body h5 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
 body p {
   font-family: "Lato";
   font-size: 1rem;
@@ -275,6 +279,16 @@ body .buttonFind, body .buttonRead {
   font-size: 1rem;
   text-align: center;
   line-height: 1.6rem;
+}
+body input, body textarea {
+  font-family: "Lato";
+  font-size: 0.9rem;
+  color: #FFFFFF;
+}
+body button {
+  font-family: "Barlow";
+  font-size: 1.1rem;
+  color: #FFFFFF;
 }
 
 * {
@@ -379,25 +393,48 @@ a.buttonRead:focus {
           transform: scale(1.15);
 }
 
-header {
-  height: 80vh;
+input, textarea {
+  width: calc(49.5% - 30px);
+  padding: 15px;
+  margin: 15px;
+  border: none;
+  border-bottom: solid 2px #86E0F9;
+  background-color: transparent;
 }
-header .hero {
-  position: absolute;
-  height: 80vh;
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+input::placeholder, textarea::placeholder {
+  opacity: 1;
+}
+
+textarea {
+  border: solid 2px #86E0F9;
+  width: calc(100% - 30px);
+}
+
+button {
+  width: calc(100% - 30px);
+  padding: 12px 0;
+  margin: 25px 15px 10%;
+  border: none;
+}
+
+header .headerImage {
   width: 100%;
-  z-index: -1;
-}
-header .hero::before {
-  content: "";
-  background-image: url("../assets/blog-header.jpg");
+  height: 100%;
+  background-image: url(../assets/blog-header.jpg);
   background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.25;
+  background-repeat: no-repeat;
 }
 header nav ul {
   display: -webkit-box;
@@ -420,6 +457,105 @@ header nav a:hover {
 header nav a:focus {
   color: #86E0F9;
 }
-header h1 {
-  width: 40%;
+header h2 {
+  text-align: center;
+  padding: 11% 8% 20% 0;
+}
+
+footer {
+  background-color: #86E0F9;
+  color: #0C1423;
+}
+footer p {
+  padding: 2.5px 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.blogContent {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.columnLeft {
+  width: 30%;
+  margin-top: 10%;
+  margin-right: 6%;
+}
+.columnLeft .imgContainer {
+  width: 126%;
+  -webkit-transform: translate(-26%, 0%);
+          transform: translate(-26%, 0%);
+  -webkit-box-shadow: 37px 13px 0px -12px #0F614E;
+          box-shadow: 37px 13px 0px -12px #0F614E;
+}
+.columnLeft .textContainer {
+  padding: 0 25px 30px;
+}
+.columnLeft .textContainer h5 {
+  padding: 20px 0 25px;
+}
+.columnLeft .textContainer p {
+  padding: 0 0 50px;
+}
+.columnLeft .textContainer li {
+  list-style: inside;
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.columnRight {
+  width: 64%;
+}
+.columnRight .imgContainerOne {
+  width: 113%;
+  -webkit-transform: translate(4.1%, -37%);
+          transform: translate(4.1%, -37%);
+  -webkit-box-shadow: -50px 50px 0px -12px #86E0F9;
+          box-shadow: -50px 50px 0px -12px #86E0F9;
+}
+.columnRight .textContainerOne {
+  margin-top: -24%;
+  padding: 5% 0 2% 5%;
+  border: 6px solid #86E0F9;
+  border-top: none;
+  border-right: none;
+}
+.columnRight .textContainerOne h3 {
+  text-align: left;
+}
+.columnRight .textContainerOne .subHeading {
+  padding: 0 0 40px;
+}
+.columnRight .textContainerOne p {
+  padding: 0;
+}
+
+.commentsBox {
+  padding: 5% 0 0 5%;
+}
+.commentsBox h4 {
+  padding-bottom: 6%;
+}
+.commentsBox li {
+  margin-bottom: 10%;
+}
+.commentsBox .imgContainer {
+  width: 12%;
+  margin: 8px 30px 0 0;
+}
+.commentsBox .textContainer {
+  width: calc(88% - 30px);
+}
+.commentsBox .textContainer .commentTitle {
+  padding: 0 0 10px 0;
+}
+.commentsBox .textContainer p {
+  padding: 0;
+}
+
+button {
+  background-color: #0F614E;
 }
