@@ -1,136 +1,115 @@
 @use "variables" as *;
 @use "mixins" as *;
 
+// Main Styles:
+
+// Section One Styles:
 .sectionOne {
     padding: 13% 10%;
+    .oneFlexBox {
+        @include flex (column, nowrap, center, center);
+    }
 }
 
+// Section Two Styles:
 .sectionTwo {
     .twoFlexBox {
         @include flex (row, wrap, space-between, center);
-        // @include forTabletLandscape {
-        //     @include flex (column, center);
-        //     width: 100%;
-        // }
+    }
+    .twoImgBoxLeft, .twoImgBoxRight {
+        width: 50%;
     }
     .twoImgBoxLeft {
-        width: 50%;
         transform: translate(-20%, -9%);
         box-shadow: 35px 35px 0px $tertiaryColour;
-        // @include forLaptop {
-        //     transform: translate(-20%, -11%);
-        // }
-        // @include forTabletLandscape {
-        //     width: 100%;
-        //     transform: none;
-        //     box-shadow: none;
-        //     order: 1;
-        //     height: 40vh;
-        //     img {
-        //         object-fit: cover;
-        //         width: 100%;
-        //     }
-        // }
-    }
-    .twoTextBoxLeft {
-        margin-top: 2%;
-        width: 40%;
-        text-align: left;
-        // @include forTabletLandscape {
-        //     width: 100%;
-        //     padding: 5%;
-        //     text-align: center;
-        //     order: 2;
-        // }
-    }
-    .twoTextBoxRight {
-        width: 40%;
-        text-align: right;
-        // @include forTabletLandscape {
-        //     width: 100%;
-        //     text-align: center;
-        //     padding: 5%;
-        //     order: 4;
-        // }
     }
     .twoImgBoxRight {
-        width: 50%;
         transform: translate(20%, 11%);
         box-shadow: -35px 35px 0px $tertiaryColour;
-        // @include forTabletLandscape {
-        //     width: 100%;
-        //     transform: none;
-        //     box-shadow: none;
-        //     order: 3;
-        //     height: 40vh;
-        //     img {
-        //         object-fit: cover;
-        //         width: 100%;
-        //     }
-        // }
+    }
+    .twoTextBoxLeft, .twoTextBoxRight {
+        margin-top: 2%;
+        width: 40%;
+    }
+    .twoTextBoxLeft {
+        text-align: left;
+    }
+    .twoTextBoxRight {
+        text-align: right;
     }
 }
+
+// Section Three Styles:
 .sectionThree {
     padding: 6% 0% 7%;
-
+    .threeFlexBox {
+        @include flex (row, wrap);
+    }
     li {
         width: 50%;
         margin-top: 5%;
-
-        .icon {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background-color: $tertiaryColour;
-            color: $primaryColour;
-            font-size: 30px;
-            padding: 0 1%;
-            margin: 0 3%;
-            transition: 0.25s;
-
-            &:hover {
-                transform: scale(1.25);
-            }
-
-            &:focus {
-                transform: scale(1.25);
-            }
+    }
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: $tertiaryColour;
+        color: $primaryColour;
+        font-size: 30px;
+        padding: 0 1%;
+        margin: 0 3%;
+        transition: 0.25s;
+        &:hover {
+            transform: scale(1.25);
         }
-
-        .textContainer {
-            margin-top: 1%;
-            width: calc(92% - 45px)
+        &:focus {
+            transform: scale(1.25);
         }
+    }
+    .threeTextBox {
+        margin-top: 1%;
+        width: calc(92% - 45px)
     }
 }
 
+// Section Four Styles:
+.sectionFour {
+    img {
+        width: 100%;
+    }
+}
+
+// Section Five Styles:
 .sectionFive {
     padding: 8% 0;
-
-    .imgContainer {
+    .fiveFlexBox {
+        @include flex (row, wrap);
+    }
+    .fiveImgBox {
         width: 23%;
         margin-right: 10%;
-
         img {
+            height: auto;
             box-shadow: 35px 35px 0px $tertiaryColour;
         }
     }
-
-    .textContainer {
+    .fiveTextBox {
         width: 67%;
-
         h3 {
             text-align: left;
         }
     }
 }
 
+// Section Six Styles:
 .sectionSix {
     padding: 8% 0;
-
+    .sixFlexBox {
+        @include flex (row, nowrap, space-between)
+    }
     li {
         width: 31%;
     }

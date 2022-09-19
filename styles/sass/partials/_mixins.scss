@@ -1,6 +1,15 @@
 @use "variables" as *;
 
-// Styles for header image (for Blog and Contact Page)
+// Mixin for flexBox
+@mixin flex ($direction, $wrap: nowrap, $mainAxis: normal, $crossAxis: normal) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $mainAxis;
+    align-items: $crossAxis;
+}
+
+// Mixin for header image (for Blog and Contact Page)
 @mixin headerImage($backgroundImage) {
     .headerImage {
         width: 100%;
@@ -11,12 +20,27 @@
     }
 }
 
-// Styles for top nav
-@mixin nav() {
+// Mixin for top nav
+@mixin nav {
     nav {
-        ul {
-            display: flex;
-            justify-content: flex-end;
+        position: relative;
+        .navIcon {
+            display: none;
+            width: auto;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: $fontColour;
+            background-color: transparent;
+            &:hover {
+                color: $tertiaryColour;
+            }
+            &:focus {
+                color: $tertiaryColour;
+            }
+        }
+        .navBar {
+            @include flex (row, nowrap, flex-end);
             padding-top: 35px;
         }
         a {
@@ -31,63 +55,8 @@
                 color: $tertiaryColour;
             }
         }
-    } 
+    }
 }
-
-// Styles for FlexBox
-@mixin flex ($direction, $wrap: nowrap, $mainAxis: normal, $crossAxis: normal) {
-    display: flex;
-    flex-direction: $direction;
-    flex-wrap: $wrap;
-    justify-content: $mainAxis;
-    align-items: $crossAxis;
-}
-
-// Media Queries:
-
-// @mixin forDesktop {
-//     /* all of our styles for DESKTOP devices will go within this breakpoint */
-//     @media (max-width: 1440px) {
-//         @content;
-//     }
-// }
-
-// @mixin forLaptop {
-//     /* all of our styles for LAPTOP devices will go within this breakpoint */
-//     @media (max-width: 1200px) {
-//         @content;
-//     }
-// }
-
-// @mixin forTabletLandscape {
-//     /* all of our styles for TABLET devices in landscape mode will go within this breakpoint */
-//     @media (max-width: 1100px) {
-//         @content;
-//     }
-// }
-
-// @mixin forTablet {
-//     /* all of our styles for TABLET devices in portrait mode will go within this breakpoint */
-//     @media (max-width: 768px) {
-//         @content;
-//     }
-// }
-
-// @mixin forLargeMobile {
-//     /* all of our styles for large MOBILE devices will go within this breakpoint */
-//     @media (max-width: 480px) {
-//         @content;
-//     }
-// }
-
-// @mixin forMobile {
-//     /* all of our styles for small MOBILE devices will go within this breakpoint */
-//     @media (max-width: 360px) {
-//         @content;
-//     }
-// }
-
-
 
 
 

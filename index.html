@@ -7,121 +7,138 @@
     <title>Home</title>
     <script src="https://kit.fontawesome.com/70bcc15de9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/styles.css">
-    
 </head>
 <body>
+    <!-- Header HTML -->
     <header>
         <div class="hero"></div>
         <div class="wrapper">
             <nav>
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#blog">BLOG</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
+                <button class="navIcon fa-solid fa-bars">
+                    <p class="sr-only">click here to open slide-out menu</p>
+                </button> <!--.navIcon ends-->
+                <ul class="navBar">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul> <!--.navBar ends-->
             </nav>
             <h1>UNDER THE SEA</h1>
             <div class="imgBox">
                 <img src="assets/home-box-header.png" alt="fish swimming near coral">
-            </div>
-        </div>
-    </header>
+            </div> <!--.imgBox ends-->
+        </div> <!--.wrapper ends-->
+    </header> 
+    <!-- Header HTML ends -->
+
+    <!-- Main HTML -->
     <main>
         <section class="sectionOne">
-            <div class="wrapper flexColumn">
+            <div class="wrapper oneFlexBox">
                 <h3>WHAT IS UNDER THE SEA?</h3>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae magnam iste nulla ad consequatur necessitatibus quas molestiae deleniti tenetur modi error dolorem harum ab, mollitia atque, possimus ea sapiente, explicabo voluptatem magni rerum porro? Nemo, vero soluta deleniti laborum molestias incidunt inventore voluptas.
                 </p>
                 <a class="buttonFind" href="#">FIND OUT MORE</a>
-            </div>
-        </section>
+            </div> <!--.wrapper .oneFlexBox ends-->
+        </section> <!--.sectionOne ends-->
+
         <section class="sectionTwo greenBack">
             <div class="wrapper twoFlexBox">
                 <div class="twoImgBoxLeft">
                     <img src="assets/left-image.jpg" alt="person watching a tank of fish">
-                </div>
+                </div> <!--.twoImgBoxLeft ends-->
                 <div class="twoTextBoxLeft">
                     <h4>NEW ADDITIONS</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus mollitia veniam ipsum nulla impedit sit officia ipsa quam facere alias! Officiis nisi nostrum adipisci optio!
                     </p>
                     <a class="buttonRead" href="#">READ MORE</a>
-                </div>
+                </div> <!--.twoTextBoxLeft ends-->
                 <div class="twoTextBoxRight">
                     <h4>MEET REAL NEMO</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus mollitia veniam ipsum nulla impedit sit officia ipsa quam facere alias! Officiis nisi nostrum adipisci optio!
                     </p>
                     <a class="buttonRead" href="#">READ MORE</a>
-                </div>
+                </div> <!--.twoTextBoxRight ends-->
                 <div class="twoImgBoxRight">
                     <img src="assets/right-image.jpg" alt="orange fish with white strips swimming in the ocean">
-                </div>
-            </div>
-        </section>
-        <section class="sectionThree wrapper">
-            <ul class="flexGrid">
-                <li class="flexGrid">
+                </div> <!--.twoImgBoxRight ends-->
+            </div> <!--.wrapper .twoFlexBox ends-->
+        </section> <!--.sectionTwo ends-->
+
+        <section class="sectionThree">
+            <ul class="wrapper threeFlexBox">
+                <li class="threeFlexBox">
                     <a class="icon fa-solid fa-location-arrow" href="#"><p class="sr-only">Click here for Locations</p></a>
-                    <div class="textContainer">
+                    <div class="threeTextBox">
                         <h4>LOCATIONS</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repa rehe enderit libero magnam earum pers piciatis exerc sans
                         ast itonem! Eveniet exercit.</p>
-                    </div>
-                </li>
-                <li class="flexGrid">
+                    </div> <!--.threeTextBox ends-->
+                </li> <!--.threeFlexBox ends-->
+                <li class="threeFlexBox">
                     <a class="icon fa-solid fa-people-group" href="#"><p class="sr-only">Click here for Community Page</p></a>
-                    <div class="textContainer">
+                    <div class="threeTextBox">
                         <h4>COMMUNITY</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repa rehe enderit libero magnam earum pers piciatis exerc sans
                         ast itonem! Eveniet exercit.</p>
-                    </div>
-                </li>
-                <li class="flexGrid">
+                    </div> <!--.threeTextBox ends-->
+                </li> <!--.threeFlexBox ends-->
+                <li class="threeFlexBox">
                     <a class="icon fa-regular fa-solid fa-blog" href="#"><p class="sr-only">Click here for Blog</p></a>
-                    <div class="textContainer">
+                    <div class="threeTextBox">
                         <h4>BLOG</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repa rehe enderit libero magnam earum pers piciatis exerc sans
                         ast itonem! Eveniet exercit.</p>
-                    </div>
-                </li>
-                <li class="flexGrid">
+                    </div> <!--.threeTextBox ends-->
+                </li> <!--.threeFlexBox ends-->
+                <li class="threeFlexBox">
                     <a class="icon fa-sharp fa-solid fa-phone-flip" href="#"><p class="sr-only">Click here to Get in Touch</p></a>
-                    <div class="textContainer">
+                    <div class="threeTextBox">
                         <h4>GET IN TOUCH</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repa rehe enderit libero magnam earum pers piciatis exerc sans
                         ast itonem! Eveniet exercit.</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
+                    </div> <!--.threeTextBox ends-->
+                </li> <!--.threeFlexBox ends-->
+            </ul> <!--.wrapper .threeFlexBox ends-->
+        </section> <!--.sectionThree ends-->
+
         <section class="sectionFour">
-            <div class="imgContainer">
+            <div class="fourImgBox">
                 <img src="assets/banner.jpg" alt="person watching shark and other fish in an aquarium tank">
-            </div>
-        </section>
-        <section class="sectionFive wrapper flexGrid">
-            <div class="imgContainer">
-                <img src="assets/small-box.jpg" alt="school of fish swimming together">
-            </div>
-            <div class="textContainer">
-                <h3>THIS MONTH PROFILE</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nulla voluptatibus repellendus mollitia iure, reprehenderit deserunt tenetur error, debitis facilis, neque magnam incidunt eius magni? Eligendi illum eaque deserunt, nulla rem veritatis exercitationem reiciendis, quos labore atque eveniet quae nobis. Omnis atque ipsam accusantium molestias dolorum ducimus explicabo ea corporis! Eligendi illum eaque deserunt, nulla rem.</p>
-                <a class="buttonFind" href="#">FIND OUT MORE</a>
-            </div>
-        </section>
+            </div> <!--.fourImgBox ends-->
+        </section> <!--.sectionFour ends-->
+
+        <section class="sectionFive">
+            <div class="wrapper fiveFlexBox">
+                <div class="fiveImgBox">
+                    <img src="assets/small-box.jpg" alt="school of fish swimming together">
+                </div> <!--.fiveImgBox ends-->
+                <div class="fiveTextBox">
+                    <h3>THIS MONTH PROFILE</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nulla voluptatibus repellendus mollitia iure, reprehenderit deserunt tenetur error, debitis facilis, neque magnam incidunt eius magni? Eligendi illum eaque deserunt, nulla rem veritatis exercitationem reiciendis, quos labore atque eveniet quae nobis. Omnis atque ipsam accusantium molestias dolorum ducimus explicabo ea corporis! Eligendi illum eaque deserunt, nulla rem.</p>
+                    <a class="buttonFind" href="#">FIND OUT MORE</a>
+                </div> <!--.fiveTextBox ends-->
+            </div> <!--.wrapper .fiveFlexBox ends-->
+        </section> <!--.sectionFive ends-->
+
         <section class="sectionSix greenBack">
-            <ul class="wrapper flexGridSpaceBw">
+            <ul class="wrapper sixFlexBox">
                 <li><img src="assets/gallery-image-1.jpg" alt="child watching a fish tank at an aquarium"></li>
                 <li><img src="assets/gallery-image-2.jpg" alt="shark swimming in a tank at an aquarium"></li>
                 <li><img src="assets/gallery-image-3.jpg" alt="fish swimming near the bottom of an aquarium tank"></li>
-            </ul>
-        </section>
+            </ul> <!--.wrapper .sixFlexBox ends-->
+        </section> <!--.sectionSix ends-->
     </main>
+    <!-- Main HTML ends -->
+
+    <!-- Footer HTML -->
     <footer>
         <p>Copyright © 2018 HackerYou</p>
     </footer>
+    <!-- Footer HTML ends -->
 </body>
 </html>

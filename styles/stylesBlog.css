@@ -442,13 +442,40 @@ header .headerImage {
   background-size: cover;
   background-repeat: no-repeat;
 }
-header nav ul {
+header nav {
+  position: relative;
+}
+header nav .navIcon {
+  display: none;
+  width: auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+header nav .navIcon:hover {
+  color: #86E0F9;
+}
+header nav .navIcon:focus {
+  color: #86E0F9;
+}
+header nav .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
   padding-top: 35px;
 }
 header nav a {
