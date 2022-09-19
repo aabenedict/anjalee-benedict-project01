@@ -1,0 +1,67 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+
+// Media Queries:
+
+/* all of our styles for DESKTOP devices will go within this breakpoint */
+@media (max-width: 1440px) {
+
+}
+
+/* all of our styles for LAPTOP devices will go within this breakpoint */
+@media (max-width: 1200px) {
+    .twoImgBoxLeft {
+        transform: translate(-20%, -11%);
+    }
+}
+
+/* all of our styles for TABLET devices in landscape mode will go within this breakpoint */
+@media (max-width: 1100px) {
+    .twoFlexBox {
+        @include flex (column, center);
+        width: 100%;
+    }
+    .twoImgBoxLeft, .twoImgBoxRight {
+        width: 100%;
+        transform: none;
+        box-shadow: none;
+        height: 40vh;
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    .twoImgBoxLeft {
+        order: 1;
+    }
+    .twoImgBoxRight {
+        order: 3;
+    }
+    .twoTextBoxLeft, .twoTextBoxRight {
+        width: 100%;
+        padding: 5%;
+        text-align: center;
+    }
+    .twoTextBoxLeft {
+        order: 2;
+    }
+    .twoTextBoxRight {
+        order: 4;
+    }
+}
+
+/* all of our styles for TABLET devices in portrait mode will go within this breakpoint */
+@media (max-width: 768px) {
+    @content;
+}
+
+/* all of our styles for large MOBILE devices will go within this breakpoint */
+@media (max-width: 480px) {
+    @content;
+}
+
+/* all of our styles for small MOBILE devices will go within this breakpoint */
+@media (max-width: 360px) {
+    @content;
+}

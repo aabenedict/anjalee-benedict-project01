@@ -5,37 +5,83 @@
 @use "partials/baseStyles";
 @use "partials/header";
 @use "partials/footer";
+@use "partials/mediaQueries";
 
 
 main {
     .sectionOne {
-        padding: 15% 10%;
+        padding: 13% 10%;
     }
     .sectionTwo {
-        .imgContainerLeft {
-            width: 50%;
-            transform: translate(-20%, -11%);
-            box-shadow: 35px 43px 0px $tertiaryColour;
+        .twoFlexBox {
+            @include flex (row, wrap, space-between, center);
+            // @include forTabletLandscape {
+            //     @include flex (column, center);
+            //     width: 100%;
+            // }
         }
-        .textContainerLeft {
+        .twoImgBoxLeft {
+            width: 50%;
+            transform: translate(-20%, -9%);
+            box-shadow: 35px 35px 0px $tertiaryColour;
+            // @include forLaptop {
+            //     transform: translate(-20%, -11%);
+            // }
+            // @include forTabletLandscape {
+            //     width: 100%;
+            //     transform: none;
+            //     box-shadow: none;
+            //     order: 1;
+            //     height: 40vh;
+            //     img {
+            //         object-fit: cover;
+            //         width: 100%;
+            //     }
+            // }
+        }
+        .twoTextBoxLeft {
             margin-top: 2%;
             width: 40%;
             text-align: left;
+            // @include forTabletLandscape {
+            //     width: 100%;
+            //     padding: 5%;
+            //     text-align: center;
+            //     order: 2;
+            // }
         }
-        .textContainerRight {
+        .twoTextBoxRight {
             width: 40%;
             text-align: right;
+            // @include forTabletLandscape {
+            //     width: 100%;
+            //     text-align: center;
+            //     padding: 5%;
+            //     order: 4;
+            // }
         }
-        .imgContainerRight {
+        .twoImgBoxRight {
             width: 50%;            
             transform: translate(20%, 11%);
             box-shadow: -35px 35px 0px $tertiaryColour;
+            // @include forTabletLandscape {
+            //     width: 100%;
+            //     transform: none;
+            //     box-shadow: none;
+            //     order: 3;
+            //     height: 40vh;
+            //     img {
+            //         object-fit: cover;
+            //         width: 100%;
+            //     }
+            // }
         }
     }
     .sectionThree {
-        padding: 10% 0% 6%;
+        padding: 6% 0% 7%;
         li {
             width: 50%;
+            margin-top: 5%;
             .icon {
                 display: flex;
                 justify-content: center;
@@ -57,7 +103,7 @@ main {
                 }
             }
             .textContainer {
-                margin-top: 2%;
+                margin-top: 1%;
                 width: calc(92% - 45px)
             }
         }
