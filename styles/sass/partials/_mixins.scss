@@ -45,47 +45,47 @@
 
 // Media Queries:
 
-@mixin forDesktop {
-    /* all of our styles for DESKTOP devices will go within this breakpoint */
-    @media (max-width: 1440px) {
-        @content;
-    }
-}
+// @mixin forDesktop {
+//     /* all of our styles for DESKTOP devices will go within this breakpoint */
+//     @media (max-width: 1440px) {
+//         @content;
+//     }
+// }
 
-@mixin forLaptop {
-    /* all of our styles for LAPTOP devices will go within this breakpoint */
-    @media (max-width: 1200px) {
-        @content;
-    }
-}
+// @mixin forLaptop {
+//     /* all of our styles for LAPTOP devices will go within this breakpoint */
+//     @media (max-width: 1200px) {
+//         @content;
+//     }
+// }
 
-@mixin forTabletLandscape {
-    /* all of our styles for TABLET devices in landscape mode will go within this breakpoint */
-    @media (max-width: 1100px) {
-        @content;
-    }
-}
+// @mixin forTabletLandscape {
+//     /* all of our styles for TABLET devices in landscape mode will go within this breakpoint */
+//     @media (max-width: 1100px) {
+//         @content;
+//     }
+// }
 
-@mixin forTablet {
-    /* all of our styles for TABLET devices in portrait mode will go within this breakpoint */
-    @media (max-width: 768px) {
-        @content;
-    }
-}
+// @mixin forTablet {
+//     /* all of our styles for TABLET devices in portrait mode will go within this breakpoint */
+//     @media (max-width: 768px) {
+//         @content;
+//     }
+// }
 
-@mixin forLargeMobile {
-    /* all of our styles for large MOBILE devices will go within this breakpoint */
-    @media (max-width: 480px) {
-        @content;
-    }
-}
+// @mixin forLargeMobile {
+//     /* all of our styles for large MOBILE devices will go within this breakpoint */
+//     @media (max-width: 480px) {
+//         @content;
+//     }
+// }
 
-@mixin forMobile {
-    /* all of our styles for small MOBILE devices will go within this breakpoint */
-    @media (max-width: 360px) {
-        @content;
-    }
-}
+// @mixin forMobile {
+//     /* all of our styles for small MOBILE devices will go within this breakpoint */
+//     @media (max-width: 360px) {
+//         @content;
+//     }
+// }
 
 
 
