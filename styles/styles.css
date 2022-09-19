@@ -496,6 +496,18 @@ footer p {
   text-align: center;
 }
 
+/* all of our styles for DESKTOP devices will go within this breakpoint */
+/* all of our styles for LAPTOP devices will go within this breakpoint */
+@media (max-width: 1200px) {
+  .twoImgBoxLeft {
+    -webkit-transform: translate(-20%, -11%);
+            transform: translate(-20%, -11%);
+  }
+}
+/* all of our styles for TABLET devices in landscape mode will go within this breakpoint */
+/* all of our styles for TABLET devices in portrait mode will go within this breakpoint */
+/* all of our styles for large MOBILE devices will go within this breakpoint */
+/* all of our styles for small MOBILE devices will go within this breakpoint */
 main .sectionOne {
   padding: 13% 10%;
 }
@@ -515,117 +527,29 @@ main .sectionTwo .twoFlexBox {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* all of our styles for TABLET devices in landscape mode will go within this breakpoint */
 }
-@media (max-width: 1100px) {
-  main .sectionTwo .twoFlexBox {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: center;
-        flex-wrap: center;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
-    -webkit-box-align: normal;
-        -ms-flex-align: normal;
-            align-items: normal;
-    width: 100%;
-  }
-}
-main .sectionTwo .imgContainerLeft {
+main .sectionTwo .twoImgBoxLeft {
   width: 50%;
   -webkit-transform: translate(-20%, -9%);
           transform: translate(-20%, -9%);
   -webkit-box-shadow: 35px 35px 0px #86E0F9;
           box-shadow: 35px 35px 0px #86E0F9;
-  /* all of our styles for LAPTOP devices will go within this breakpoint */
-  /* all of our styles for TABLET devices in landscape mode will go within this breakpoint */
 }
-@media (max-width: 1200px) {
-  main .sectionTwo .imgContainerLeft {
-    -webkit-transform: translate(-20%, -11%);
-            transform: translate(-20%, -11%);
-  }
-}
-@media (max-width: 1100px) {
-  main .sectionTwo .imgContainerLeft {
-    width: 100%;
-    -webkit-transform: none;
-            transform: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    height: 40vh;
-  }
-  main .sectionTwo .imgContainerLeft img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-  }
-}
-main .sectionTwo .textContainerLeft {
+main .sectionTwo .twoTextBoxLeft {
   margin-top: 2%;
   width: 40%;
   text-align: left;
-  /* all of our styles for TABLET devices in landscape mode will go within this breakpoint */
 }
-@media (max-width: 1100px) {
-  main .sectionTwo .textContainerLeft {
-    width: 100%;
-    padding: 5%;
-    text-align: center;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-}
-main .sectionTwo .textContainerRight {
+main .sectionTwo .twoTextBoxRight {
   width: 40%;
   text-align: right;
-  /* all of our styles for TABLET devices in landscape mode will go within this breakpoint */
 }
-@media (max-width: 1100px) {
-  main .sectionTwo .textContainerRight {
-    width: 100%;
-    text-align: center;
-    padding: 5%;
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-  }
-}
-main .sectionTwo .imgContainerRight {
+main .sectionTwo .twoImgBoxRight {
   width: 50%;
   -webkit-transform: translate(20%, 11%);
           transform: translate(20%, 11%);
   -webkit-box-shadow: -35px 35px 0px #86E0F9;
           box-shadow: -35px 35px 0px #86E0F9;
-  /* all of our styles for TABLET devices in landscape mode will go within this breakpoint */
-}
-@media (max-width: 1100px) {
-  main .sectionTwo .imgContainerRight {
-    width: 100%;
-    -webkit-transform: none;
-            transform: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    height: 40vh;
-  }
-  main .sectionTwo .imgContainerRight img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-  }
 }
 main .sectionThree {
   padding: 6% 0% 7%;
