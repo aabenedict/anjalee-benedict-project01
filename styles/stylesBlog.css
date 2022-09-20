@@ -568,9 +568,6 @@ header h2 {
 .mainColumn .mainTextBox .subHeading {
   padding: 0 0 40px;
 }
-.mainColumn .mainTextBox p {
-  padding: 0;
-}
 .mainColumn .commentsBox {
   padding: 5% 0 0 5%;
 }
@@ -610,9 +607,6 @@ header h2 {
 }
 .mainColumn .commentsBox .textBoxComments .commentTitle {
   padding: 0 0 10px 0;
-}
-.mainColumn .commentsBox .textBoxComments p {
-  padding: 0;
 }
 .mainColumn button {
   background-color: #0F614E;

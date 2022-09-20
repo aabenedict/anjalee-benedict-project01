@@ -21,18 +21,6 @@
     form {
         transform: translate(-5%, -28%);
     }
-    
-
-
-    
-
-    // .sideColumn {
-    //     order: 2;
-    //     width: 100%;
-    //     margin-right: 0;
-    //     margin-bottom: 5%;
-    //     @include flex (row, wrap);
-    // }
 }
 
 /* all of our styles for small TABLET devices in landscape mode will go within this breakpoint */
@@ -56,14 +44,15 @@
         @include flex (row, wrap, space-between, flex-start);
         margin-top: -10%;
         margin-bottom: 10%;
+        .socials, .email, .address, .number {
+            width: 40%;
+        }
         .socials {
             order: 1;
-            width: 40%;
             padding-left: 6%;
         }
         .email {
             order: 3;
-            width: 40%;
             padding-left: 6%;
             h5 {
                 padding-top: 0;
@@ -74,11 +63,9 @@
                 display: inline;
             }
             order: 4;
-            width: 40%;
         }
         .number {
             order: 2;
-            width: 40%;
         }
     }
     form {

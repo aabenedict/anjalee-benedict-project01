@@ -662,18 +662,19 @@ footer p {
     margin-top: -10%;
     margin-bottom: 10%;
   }
+  .contactList .socials, .contactList .email, .contactList .address, .contactList .number {
+    width: 40%;
+  }
   .contactList .socials {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    width: 40%;
     padding-left: 6%;
   }
   .contactList .email {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    width: 40%;
     padding-left: 6%;
   }
   .contactList .email h5 {
@@ -683,7 +684,6 @@ footer p {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
-    width: 40%;
   }
   .contactList .address p {
     display: inline;
@@ -692,7 +692,6 @@ footer p {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    width: 40%;
   }
   form {
     -webkit-box-ordinal-group: 2;
