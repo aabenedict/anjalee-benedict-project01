@@ -495,6 +495,126 @@ header h2 {
   padding: 11% 8% 20% 0;
 }
 
+.mainFlexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.sideColumn {
+  width: 30%;
+  margin-top: 8%;
+  margin-right: 6%;
+}
+.sideColumn .sideImgBox {
+  width: 126%;
+  -webkit-transform: translate(-26%, 0%);
+          transform: translate(-26%, 0%);
+  -webkit-box-shadow: 37px 13px 0px -12px #0F614E;
+          box-shadow: 37px 13px 0px -12px #0F614E;
+}
+.sideColumn .sideTextBox {
+  padding: 0 25px 30px;
+}
+.sideColumn .sideTextBox h5 {
+  padding: 20px 0 25px;
+}
+.sideColumn .sideTextBox p {
+  padding: 0 0 50px;
+}
+.sideColumn .sideTextBox li {
+  list-style: inside;
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.mainColumn {
+  width: 64%;
+}
+.mainColumn .mainImgBox {
+  width: 113%;
+  -webkit-transform: translate(4.1%, -37%);
+          transform: translate(4.1%, -37%);
+  -webkit-box-shadow: -50px 50px 0px -12px #86E0F9;
+          box-shadow: -50px 50px 0px -12px #86E0F9;
+}
+.mainColumn .mainTextBox {
+  margin-top: -24%;
+  padding: 5% 0 2% 5%;
+  border: 6px solid #86E0F9;
+  border-top: none;
+  border-right: none;
+}
+.mainColumn .mainTextBox h3 {
+  text-align: left;
+  margin-bottom: 0;
+}
+.mainColumn .mainTextBox .subHeading {
+  padding: 0 0 40px;
+}
+.mainColumn .mainTextBox p {
+  padding: 0;
+}
+.mainColumn .commentsBox {
+  padding: 5% 0 0 5%;
+}
+.mainColumn .commentsBox .flexBoxComments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+}
+.mainColumn .commentsBox h4 {
+  padding-bottom: 6%;
+}
+.mainColumn .commentsBox li {
+  margin-bottom: 10%;
+}
+.mainColumn .commentsBox .imgBoxComments {
+  width: 12%;
+  margin: 8px 30px 0 0;
+}
+.mainColumn .commentsBox .imgBoxComments img {
+  width: 100%;
+  height: auto;
+}
+.mainColumn .commentsBox .textBoxComments {
+  width: calc(88% - 30px);
+}
+.mainColumn .commentsBox .textBoxComments .commentTitle {
+  padding: 0 0 10px 0;
+}
+.mainColumn .commentsBox .textBoxComments p {
+  padding: 0;
+}
+.mainColumn button {
+  background-color: #0F614E;
+}
+
 footer {
   background-color: #86E0F9;
   color: #0C1423;
@@ -505,90 +625,311 @@ footer p {
   text-align: center;
 }
 
-.blogContent {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+/* all of our styles for DESKTOP devices will go within this breakpoint */
+@media (max-width: 1380px) {
+  .sideColumn .sideImgBox {
+    -webkit-transform: translate(-25.9%, 0%);
+            transform: translate(-25.9%, 0%);
+  }
+  .mainColumn .mainImgBox {
+    -webkit-transform: translate(4.2%, -37%);
+            transform: translate(4.2%, -37%);
+  }
 }
-
-.columnLeft {
-  width: 30%;
-  margin-top: 8%;
-  margin-right: 6%;
+/* all of our styles for LAPTOP devices will go within this breakpoint */
+@media (max-width: 1260px) {
+  .sideColumn .sideImgBox {
+    -webkit-transform: translate(-27%, 0%);
+            transform: translate(-27%, 0%);
+  }
+  .mainColumn .mainImgBox {
+    -webkit-transform: translate(4.8%, -37%);
+            transform: translate(4.8%, -37%);
+  }
 }
-.columnLeft .imgContainer {
-  width: 126%;
-  -webkit-transform: translate(-26%, 0%);
-          transform: translate(-26%, 0%);
-  -webkit-box-shadow: 37px 13px 0px -12px #0F614E;
-          box-shadow: 37px 13px 0px -12px #0F614E;
+/* all of our styles for TABLET devices in landscape mode will go within this breakpoint */
+@media (max-width: 1150px) {
+  header h2 {
+    padding-right: 0;
+  }
+  .mainFlexBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sideColumn {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  .sideColumn .sideTextBox {
+    width: 50%;
+  }
+  .sideColumn .sideImgBox {
+    width: 50%;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .sideColumn .sideImgBox img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 100%;
+    width: 100%;
+  }
+  .mainColumn {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainColumn .mainImgBox {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 50vh;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .mainColumn .mainImgBox img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .mainColumn .mainTextBox {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 0;
+  }
+  .mainColumn .commentsBox {
+    padding-top: 10%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .mainColumn .commentsBox h4 {
+    padding-bottom: 2%;
+  }
+  .mainColumn .commentsBox li {
+    margin-bottom: 6%;
+  }
+  .mainColumn form {
+    padding: 3% 5% 0 5%;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .mainColumn form button {
+    margin-bottom: 4%;
+  }
 }
-.columnLeft .textContainer {
-  padding: 0 25px 30px;
+/* all of our styles for small TABLET devices in landscape mode will go within this breakpoint */
+/* all of our styles for TABLET devices in portrait mode will go within this breakpoint */
+@media (max-width: 768px) {
+  header nav .navBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  header h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .mainColumn .commentsBox .imgBoxComments {
+    width: 24%;
+    margin: 15px 23px 0 0;
+  }
+  .sideColumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  .sideColumn .sideTextBox {
+    width: 100%;
+  }
+  .sideColumn .sideTextBox p {
+    padding-bottom: 20px;
+  }
+  .sideColumn .sideImgBox {
+    width: 100%;
+    height: 30vh;
+  }
+  .sideColumn .sideImgBox img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 100%;
+    width: 100%;
+  }
 }
-.columnLeft .textContainer h5 {
-  padding: 20px 0 25px;
+/* all of our styles for large MOBILE devices will go within this breakpoint */
+@media (max-width: 600px) {
+  html {
+    font-size: 110%;
+  }
+  h4 {
+    margin-bottom: 15px;
+  }
+  h3 {
+    margin-bottom: 15px;
+  }
+  .mainColumn .mainImgBox {
+    height: 30vh;
+  }
+  .mainColumn form input {
+    width: 93%;
+  }
+  .mainColumn form input[type=email] {
+    margin-top: 0;
+  }
 }
-.columnLeft .textContainer p {
-  padding: 0 0 50px;
-}
-.columnLeft .textContainer li {
-  list-style: inside;
-  font-family: "Lato";
-  font-size: 1rem;
-  line-height: 1.6rem;
-}
-
-.columnRight {
-  width: 64%;
-}
-.columnRight .imgContainerOne {
-  width: 113%;
-  -webkit-transform: translate(4.1%, -37%);
-          transform: translate(4.1%, -37%);
-  -webkit-box-shadow: -50px 50px 0px -12px #86E0F9;
-          box-shadow: -50px 50px 0px -12px #86E0F9;
-}
-.columnRight .textContainerOne {
-  margin-top: -24%;
-  padding: 5% 0 2% 5%;
-  border: 6px solid #86E0F9;
-  border-top: none;
-  border-right: none;
-}
-.columnRight .textContainerOne h3 {
-  text-align: left;
-}
-.columnRight .textContainerOne .subHeading {
-  padding: 0 0 40px;
-}
-.columnRight .textContainerOne p {
-  padding: 0;
-}
-
-.commentsBox {
-  padding: 5% 0 0 5%;
-}
-.commentsBox h4 {
-  padding-bottom: 6%;
-}
-.commentsBox li {
-  margin-bottom: 10%;
-}
-.commentsBox .imgContainer {
-  width: 12%;
-  margin: 8px 30px 0 0;
-}
-.commentsBox .textContainer {
-  width: calc(88% - 30px);
-}
-.commentsBox .textContainer .commentTitle {
-  padding: 0 0 10px 0;
-}
-.commentsBox .textContainer p {
-  padding: 0;
-}
-
-button {
-  background-color: #0F614E;
+/* all of our styles for small MOBILE devices will go within this breakpoint */
+@media (max-width: 450px) {
+  html {
+    font-size: 100%;
+  }
+  header nav .navIcon {
+    display: block;
+    margin: 3% 0;
+    padding: 0;
+  }
+  header nav .navBar {
+    display: none;
+  }
+  header h2 {
+    padding: 15% 0% 15% 0;
+  }
+  .mainColumn .commentsBox {
+    padding-left: 0;
+    text-align: center;
+  }
+  .mainColumn .commentsBox .flexBoxComments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 6% 3%;
+    padding: 0 4% 4%;
+    border: 4px solid #86E0F9;
+    border-radius: 10%;
+  }
+  .mainColumn .commentsBox .flexBoxComments .imgBoxComments {
+    margin-right: 0;
+    width: 35%;
+  }
+  .mainColumn .commentsBox .flexBoxComments .textBoxComments {
+    width: 100%;
+  }
+  .mainColumn form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  .mainColumn form input, .mainColumn form textarea {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
 }

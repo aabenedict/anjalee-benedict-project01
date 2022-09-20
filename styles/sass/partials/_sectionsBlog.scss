@@ -1,0 +1,123 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+// Main Styles:
+
+.mainFlexBox {
+    @include flex (row, nowrap, normal, flex-start);
+}
+
+// Side Column Styles (left column):
+.sideColumn {
+    width: 30%;
+    margin-top: 8%;
+    margin-right: 6%;
+    // Side Image Box Styles:
+    .sideImgBox {
+        width: 126%;
+        transform: translate(-26%, 0%);
+        box-shadow: 37px 13px 0px -12px $secondaryColour;
+    }
+    // Side Text Box Styles:
+    .sideTextBox {
+        padding: 0 25px 30px;
+        h5 {
+            padding: 20px 0 25px;
+        }
+        p {
+            padding: 0 0 50px
+        }
+        li {
+            list-style: inside;
+            font-family: $bodyFont;
+            font-size: 1rem;
+            line-height: 1.6rem;
+        }
+        // h5 {
+        //     padding-top: 40px;
+        // }
+        // ul {
+        //     padding-top: 35px;
+        //     li {
+        //         list-style: inside;
+        //         font-family: $bodyFont;
+        //         font-size: 1rem;
+        //         line-height: 1.6rem;
+        //     }
+        // }
+    }
+}
+
+// Main Column Styles (right column):
+.mainColumn {
+    width: 64%;
+    // Main Image Box Styles:
+
+    //*******************//
+    // .borderContainer {
+    //     border-left: 4px solid red;
+    //     border-bottom: 4px solid red;
+    // }
+    //*******************// <-- only attempt after everything else is fixed
+
+    .mainImgBox {
+        width: 113%;
+        // position: relative;
+        // bottom: 225px;
+        // left: 38px;
+        transform: translate(4.1%, -37%);
+        box-shadow: -50px 50px 0px -12px $tertiaryColour;
+    }
+    // Main Text Box Styles:
+    .mainTextBox{
+        margin-top: -24%;
+        padding: 5% 0 2% 5%;
+        border: 6px solid $tertiaryColour;
+        border-top: none;
+        border-right: none;
+        h3 {
+            text-align: left;
+            margin-bottom: 0;
+        }
+        .subHeading {
+            padding: 0 0 40px;
+        }
+        p {
+            padding: 0;
+        }
+    }
+    // Comments Box Styles:
+    .commentsBox {
+        padding: 5% 0 0 5%;
+        .flexBoxComments {
+            @include flex (row, nowrap)
+        }
+        h4 {
+            padding-bottom: 6%;
+        }
+        li {
+            margin-bottom: 10%;
+        }
+        .imgBoxComments {
+            width: 12%;
+            margin: 8px 30px 0 0;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .textBoxComments {
+            width: calc(88% - 30px);
+            .commentTitle {
+                padding: 0 0 10px 0;
+            }
+            p {
+                padding: 0;
+            }
+        }
+    }
+    // Form Styles (general form stylings are in _baseStyles.css):
+    button {
+        background-color: $secondaryColour;
+    }
+}

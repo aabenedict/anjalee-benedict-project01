@@ -438,6 +438,23 @@ button {
 header {
   height: 100vh;
 }
+header .hero {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+header .hero::before {
+  content: "";
+  background-image: url("../assets/header-image.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
+}
 header nav {
   position: relative;
 }
@@ -485,23 +502,6 @@ header nav a:hover {
 }
 header nav a:focus {
   color: #86E0F9;
-}
-header .hero {
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  z-index: -1;
-}
-header .hero::before {
-  content: "";
-  background-image: url("../assets/header-image.jpg");
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.25;
 }
 header h1 {
   width: 40%;
