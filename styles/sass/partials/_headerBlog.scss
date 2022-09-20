@@ -8,9 +8,8 @@ header {
     @include headerImage("../assets/blog-header.jpg");
     // Styles for nav:
     @include nav();
-    // Styles for h2:
+    // Styles for h2 (additional styles are in _baseStyles.scss):
     h2 {
-        text-align: center;
         padding: 11% 8% 20% 0;
     }
 }

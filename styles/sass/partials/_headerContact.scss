@@ -1,13 +1,16 @@
 @use "variables" as *;
 @use "mixins" as *;
 
+// Header Styles:
+
 header {
+    // Styles for header background image:
     @include headerImage("../assets/contact-header.jpg");
-
+    // Styles for nav:
     @include nav();
-
+    // Styles for h2 (additional styles are in _baseStyles.scss):
     h2 {
-        text-align: center;
-        padding: 11% 8% 20% 0;
+        padding: 11% 0 20% 0;
+        margin-left: 16%;
     }
 }

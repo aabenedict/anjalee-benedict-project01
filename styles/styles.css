@@ -353,6 +353,10 @@ img {
   display: block;
 }
 
+h2 {
+  text-align: center;
+}
+
 h3 {
   margin-bottom: 30px;
 }

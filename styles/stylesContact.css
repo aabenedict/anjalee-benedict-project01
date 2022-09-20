@@ -353,6 +353,10 @@ img {
   display: block;
 }
 
+h2 {
+  text-align: center;
+}
+
 h3 {
   margin-bottom: 30px;
 }
@@ -491,39 +495,82 @@ header nav a:focus {
   color: #86E0F9;
 }
 header h2 {
-  text-align: center;
-  padding: 11% 8% 20% 0;
+  padding: 11% 0 20% 0;
+  margin-left: 16%;
 }
 
-footer {
-  background-color: #86E0F9;
-  color: #0C1423;
-}
-footer p {
-  padding: 2.5px 0;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-aside {
-  width: 30%;
-  margin-top: -8%;
-  margin-right: 6%;
-}
-aside .contactList {
+.mainFlexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
-aside .iconSocial {
+
+.sideColumn {
+  width: 30%;
+  margin-top: 8%;
+  margin-right: 6%;
+  padding-right: 7%;
+}
+
+.contactList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.socialsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+}
+
+.iconSocial {
   margin-right: 25px;
   font-size: 1.2rem;
   color: #FFFFFF;
 }
-aside h5 {
+
+h5 {
   padding: 25px 0;
 }
-aside p {
+
+p {
   padding: 0 0 2px;
 }
 
@@ -538,4 +585,265 @@ form {
 }
 form button {
   background-color: #0C1423;
+}
+
+footer {
+  background-color: #86E0F9;
+  color: #0C1423;
+}
+footer p {
+  padding: 2.5px 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* all of our styles for DESKTOP devices will go within this breakpoint */
+/* all of our styles for LAPTOP devices will go within this breakpoint */
+@media (max-width: 1200px) {
+  form {
+    -webkit-transform: translate(-1%, -32%);
+            transform: translate(-1%, -32%);
+  }
+}
+/* all of our styles for TABLET devices in landscape mode will go within this breakpoint */
+@media (max-width: 1100px) {
+  form {
+    -webkit-transform: translate(-5%, -28%);
+            transform: translate(-5%, -28%);
+  }
+}
+/* all of our styles for small TABLET devices in landscape mode will go within this breakpoint */
+@media (max-width: 1000px) {
+  header h2 {
+    margin-left: 0;
+  }
+  .mainFlexBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sideColumn {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .contactList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: -10%;
+    margin-bottom: 10%;
+  }
+  .contactList .socials {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 40%;
+    padding-left: 6%;
+  }
+  .contactList .email {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 40%;
+    padding-left: 6%;
+  }
+  .contactList .email h5 {
+    padding-top: 0;
+  }
+  .contactList .address {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    width: 40%;
+  }
+  .contactList .address p {
+    display: inline;
+  }
+  .contactList .number {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 40%;
+  }
+  form {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: translate(0%, -24%);
+            transform: translate(0%, -24%);
+    width: 85%;
+  }
+}
+/* all of our styles for TABLET devices in portrait mode will go within this breakpoint */
+@media (max-width: 768px) {
+  header nav .navBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  form {
+    -webkit-transform: translate(0%, -10%);
+            transform: translate(0%, -10%);
+    width: 90%;
+  }
+  .contactList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 10%;
+  }
+}
+/* all of our styles for large MOBILE devices will go within this breakpoint */
+@media (max-width: 600px) {
+  html {
+    font-size: 110%;
+  }
+  h4 {
+    margin-bottom: 15px;
+  }
+  h3 {
+    margin-bottom: 15px;
+  }
+  form {
+    -webkit-transform: none;
+            transform: none;
+    width: 95%;
+  }
+}
+/* all of our styles for small MOBILE devices will go within this breakpoint */
+@media (max-width: 500px) {
+  html {
+    font-size: 100%;
+  }
+  header nav .navIcon {
+    display: block;
+    margin: 3% 0;
+    padding: 0;
+  }
+  header nav .navBar {
+    display: none;
+  }
+  header h2 {
+    padding: 15% 0% 15% 0;
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  form input,
+form textarea {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  form input[type=email] {
+    margin-top: 0;
+  }
+  .contactList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    text-align: center;
+  }
+  .contactList .iconSocial {
+    margin-right: 20px;
+  }
+  .contactList .socials {
+    padding: 0 0 5px;
+    width: auto;
+  }
+  .contactList .email {
+    padding: 0 0 5px;
+    width: 100%;
+  }
+  .contactList .email h5 {
+    padding-bottom: 0;
+  }
+  .contactList .address {
+    width: 100%;
+  }
+  .contactList .number {
+    width: 100%;
+    padding: 0 0 5px;
+  }
 }

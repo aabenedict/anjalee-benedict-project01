@@ -1,0 +1,189 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+
+// Media Queries:
+
+/* all of our styles for DESKTOP devices will go within this breakpoint */
+@media (max-width: 1400px) {
+    
+}
+
+/* all of our styles for LAPTOP devices will go within this breakpoint */
+@media (max-width: 1200px) {
+    form {
+        transform: translate(-1%, -32%);
+    }
+}
+
+/* all of our styles for TABLET devices in landscape mode will go within this breakpoint */
+@media (max-width: 1100px) {
+    form {
+        transform: translate(-5%, -28%);
+    }
+    
+
+
+    
+
+    // .sideColumn {
+    //     order: 2;
+    //     width: 100%;
+    //     margin-right: 0;
+    //     margin-bottom: 5%;
+    //     @include flex (row, wrap);
+    // }
+}
+
+/* all of our styles for small TABLET devices in landscape mode will go within this breakpoint */
+@media (max-width: 1000px) {
+    header {
+        h2 {
+            margin-left: 0;
+        }
+    }
+    .mainFlexBox {
+        @include flex (column, nowrap, center, center);
+    }
+    .sideColumn {
+        order: 2;
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .contactList {
+        @include flex (row, wrap, space-between, flex-start);
+        margin-top: -10%;
+        margin-bottom: 10%;
+        .socials {
+            order: 1;
+            width: 40%;
+            padding-left: 6%;
+        }
+        .email {
+            order: 3;
+            width: 40%;
+            padding-left: 6%;
+            h5 {
+                padding-top: 0;
+            }
+        }
+        .address {
+            p {
+                display: inline;
+            }
+            order: 4;
+            width: 40%;
+        }
+        .number {
+            order: 2;
+            width: 40%;
+        }
+    }
+    form {
+        order: 1;
+        box-shadow: none;
+        transform: translate(0%, -24%);
+        width: 85%;
+    }
+}
+
+/* all of our styles for TABLET devices in portrait mode will go within this breakpoint */
+@media (max-width: 768px) {
+    header {
+        nav {
+            .navBar {
+                @include flex (row, nowrap, center)
+            }
+        }
+    }
+    form {
+        transform: translate(0%, -10%);
+        width: 90%;
+    }  
+    .contactList {
+        @include flex (row, wrap, space-between, flex-start);
+        margin-top: 10%;
+    }
+}
+
+/* all of our styles for large MOBILE devices will go within this breakpoint */
+@media (max-width: 600px) {
+    html {
+        font-size: 110%;
+    }
+    h4 {
+        margin-bottom: 15px;
+    }
+    h3 {
+        margin-bottom: 15px;
+    }
+    form {
+        transform: none;
+        width: 95%;
+    }
+}
+
+/* all of our styles for small MOBILE devices will go within this breakpoint */
+@media (max-width: 500px) {
+    html {
+        font-size: 100%;
+    }
+
+    header {
+        nav {
+            .navIcon {
+                display: block;
+                margin: 3% 0;
+                padding: 0;
+            }
+            .navBar {
+                display: none;
+            }
+        }
+        h2 {
+            padding: 15% 0% 15% 0;
+        }
+    }
+    form {
+        @include flex (row, wrap);
+
+        input,
+        textarea {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+            
+        }
+        input[type=email] {
+            margin-top: 0;
+        }
+    }
+
+    .contactList {
+        @include flex (row, wrap, center);
+        text-align: center;
+        .iconSocial {
+            margin-right: 20px;
+        }
+        .socials {
+            padding: 0 0 5px;
+            width: auto;
+        }
+        .email {
+            padding: 0 0 5px;
+            width: 100%;
+            h5 {
+                padding-bottom: 0;
+            }
+        }
+        .address {
+            width: 100%;
+        }
+        .number {
+            width: 100%;
+            padding: 0 0 5px;
+        }
+    }
+}
