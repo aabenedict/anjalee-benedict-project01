@@ -13,4 +13,6 @@ header {
         padding: 11% 0 20% 0;
         margin-left: 16%;
     }
+    // Styles for slide out nav:
+    @include slideOutNav;
 }

@@ -498,6 +498,52 @@ header h2 {
   padding: 11% 0 20% 0;
   margin-left: 16%;
 }
+header .slideOutNav {
+  padding: 35px 50px;
+  width: 100%;
+  max-width: 449px;
+  height: 100vh;
+  background-color: #0C1423;
+  color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: -450px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+header .slideOutNav .buttonContainer button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px;
+  margin: 20px;
+  background-color: #0C1423;
+  font-size: 2rem;
+}
+header .slideOutNav .buttonContainer button:hover {
+  color: #86E0F9;
+}
+header .slideOutNav .buttonContainer button:focus {
+  color: #86E0F9;
+}
+header .slideOutNav li {
+  padding-bottom: 10px;
+}
+header .slideOutNav li a {
+  font-family: "Barlow";
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #FFFFFF;
+}
+header .slideOutNav li a:hover {
+  color: #86E0F9;
+}
+header .slideOutNav li a:focus {
+  color: #86E0F9;
+}
 
 .mainFlexBox {
   display: -webkit-box;

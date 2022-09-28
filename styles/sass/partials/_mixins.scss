@@ -58,5 +58,47 @@
     }
 }
 
-
-
+// Mixin for slide out nav
+@mixin slideOutNav {
+    .slideOutNav {
+        padding: 35px 50px;
+        width: 100%;
+        max-width: 449px;
+        height: 100vh;
+        background-color: $primaryColour;
+        color: $fontColour;
+        position: fixed;
+        top: 0;
+        left: -450px;
+        transition: 0.75s;
+        .buttonContainer button {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            margin: 20px;
+            background-color: $primaryColour;
+            font-size: 2rem;
+            &:hover {
+                color: $tertiaryColour;
+            }
+            &:focus {
+                color: $tertiaryColour;
+            }
+        }
+        li {
+            padding-bottom: 10px;
+            a {
+                font-family: $headingFont;
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+                color: $fontColour;
+                &:hover {
+                    color: $tertiaryColour;
+                }
+                &:focus {
+                    color: $tertiaryColour;
+                }
+            }
+        }
+    }
+}
