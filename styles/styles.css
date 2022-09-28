@@ -525,7 +525,7 @@ header .slideOutNav {
   color: #FFFFFF;
   position: fixed;
   top: 0;
-  left: -450px;
+  left: 0;
   -webkit-transition: 0.75s;
   transition: 0.75s;
 }
@@ -561,6 +561,12 @@ header .slideOutNav li a:hover {
 }
 header .slideOutNav li a:focus {
   color: #86E0F9;
+}
+header .show {
+  display: block;
+}
+header .hide {
+  display: none;
 }
 
 .sectionOne {

@@ -69,7 +69,7 @@
         color: $fontColour;
         position: fixed;
         top: 0;
-        left: -450px;
+        left: 0;
         transition: 0.75s;
         .buttonContainer button {
             display: flex;
@@ -100,5 +100,11 @@
                 }
             }
         }
+    }
+    .show {
+        display: block;
+    }
+    .hide {
+        display: none;
     }
 }

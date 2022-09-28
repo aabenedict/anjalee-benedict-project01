@@ -7,6 +7,10 @@
     <title>Home</title>
     <script src="https://kit.fontawesome.com/70bcc15de9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/styles.css">
+    <script>
+        /*to prevent Firefox FOUC, this must be here*/
+        let FF_FOUC_FIX;
+    </script>
 </head>
 <body>
     <!-- Header HTML -->
@@ -30,7 +34,7 @@
             </div> <!--.imgBox ends-->
         </div> <!--.wrapper ends-->
         <!-- Markup for Slide Out Nav -->
-        <div class="slideOutNav">
+        <div class="slideOutNav hide" id="slideOutNavElement">
             <div class="buttonContainer">
                 <button><i class="fa-solid fa-xmark"></i></button>
             </div> <!-- .buttonContainer ends -->
@@ -154,5 +158,8 @@
         <p>Copyright © 2018 HackerYou</p>
     </footer>
     <!-- Footer HTML ends -->
+
+    <!-- Linked JS file -->
+    <script src="./script.js"></script>
 </body>
 </html>
