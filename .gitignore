@@ -1,5 +1,7 @@
 *.pdf
 *.zip
+**/designs
+*styleguide.png
 *Under-The-Sea-blog-post.png
 *Under-The-Sea-contact.png
 *Under-The-Sea-home.png
